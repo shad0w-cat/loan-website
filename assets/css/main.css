@@ -1,0 +1,76 @@
+/*********************************************************************
+
+
+    -------------------------
+    --  TABLE OF CONTENTS  --
+    -------------------------
+
+    1.  Basic Styling
+    2.  Header Styling
+    3.  Main Styling
+    4.  .........TO BE ADDED.........
+    n.  Footer Styling
+
+
+
+*********************************************************************/
+
+
+/*  1. 
+-----    BASIC    -----
+*********************************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    padding-top: 5.1%;
+}
+
+
+/*  2. 
+-----    HEADER    -----
+*********************************************************************/
+
+header {
+    width: 100%;
+    height: 10%;
+    background-color: #3589f1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/*  3. 
+-----    MAIN    -----
+*********************************************************************/
+main {}
+
+#home {
+    width: 99%;
+    height: 88vh;
+}
+
+section {
+    margin: 10px auto;
+    width: 99%;
+    height: 88vh;
+    border: 1px solid black;
+    /*to be removed*/
+}
+
+
+/*  n. 
+-----   FOOTER    -----
+*********************************************************************/
+
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: #3589f1;
+    /* TO BE REMOVED*/
+}
