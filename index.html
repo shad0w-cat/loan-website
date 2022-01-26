@@ -1,38 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <title>Dhattarwal Enterprises</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous">
 
-<body>
-    <!----------  HEADER START ---------->
-    <header>
-        <div class="logo-div"></div>
-        <div class="title-div"></div>
-        <div class="nav-bar-div"></div>
-    </header>
-    <!----------  HEADER END (/) ---------->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <title>Dhattarwal Enterprises</title>
+    </head>
 
-    <!----------  MAIN START ---------->
-    <main>
-        <section id="home"></section>
-        <section id="about"></section>
-        <section id="loans"></section>
-        <section id="calculator"></section>
-    </main>
-    <!----------  MAIN END (/) ---------->
+    <body>
+        <!----------  HEADER START ---------->
+        <header>
+            <div class="logo-div"></div>
+            <div class="title-div"></div>
+            <div class="nav-bar-div"></div>
+        </header>
+        <!----------  HEADER END (/) ---------->
+        
+        
+        <!----------  MAIN START ---------->
+        <main>
+            <section id="home"></section>
 
-    <!----------  FOOTER START ---------->
-    <footer>
+            <section id="loans">
+                <div class="loans-div">
+                    <div class="heading-loans">
+                        <h1>Find Loan Products We Offers</h1>
+                        <p>We will match you with a loan program that meet your
+                            financial need.In short term liquidity, by striving
+                            to make funds available to them <span>within 24
+                                hours of application.</span> </p>
+                                </div>
 
-    </footer>
-    <!----------  HEADER END (/) ---------->
+                                <div class="loans-grid">
+                                    <div class="loan-row">
+                                        <div class="icon">
+                                            <i class="fa fa-home" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="content">
+                                            <h2>Home Loan</h2>
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, ex?</p>
+                                        </div>
+                                    </div>
+                               
+                               
+                                    <div class="loan-row">
+                                        <div class="icon">
+                                            
+                                        <!-- personal loan -->
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                          
+                                        </div>
+                                        <div class="content">
+                                    <h2>Personal Loan</h2>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, ex?</p>
+                               
+                            </div>
+                        </div>
+                    
+                            <div class="loan-row">
+                                <div class="icon">
+                                    <i class="fa fa-shield" aria-hidden="true"></i>
+                                </div>
+                                <div class="content">
+                                    <h2>Security Loan</h2>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, ex?</p>
+                                </div>
+                  
+                        </div>
+                      
+                            <div class="loan-row">
+                                <div class="icon">
+                                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                </div>
+                                <div class="content">
+                                    <h2>Business Loan</h2>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, ex?</p>
+                                </div>
+                            </div>
+              
+                   
+                            <div class="loan-row">
+                                <div class="icon">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                </div>
+                                <div class="content">
+                                    <h2>Education Loan</h2>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, ex?</p>
+                                </div>
+                            </div>
+                      
 
-</body>
+                            <div class="loan-row">
+                                <div class="icon">
+                                    <i class="fa fa-building" aria-hidden="true"></i>
+                                </div>
+                                <div class="content">
+                                    <h2>Property Loan</h2>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, ex?</p>
+                                </div>
+                         
+                      
 
+
+
+                        <!-- Security loan -->
+                        <!-- <i class="fa fa-shield" aria-hidden="true"></i> -->
+
+                        <!-- Business Loan -->
+                        <!-- <i class="fa fa-briefcase" aria-hidden="true"></i> -->
+
+                        <!-- Education Loan -->
+                        <!-- <i class="fa fa-book" aria-hidden="true"></i> -->
+
+                        <!-- property -->
+                        <!-- <i class="fa fa-building" aria-hidden="true"></i> -->
+                    </div>
+                </div>
+            </section>
+            <section id="calculator">
+                <div class="calculator-div">
+                    <div class="left">
+                        <h1>Calculate</h1>
+                        <div id="range-amount">
+                            <div class="rangeValues">
+                                <span id="minRange">10000</span>
+                                <span id="selectedRange">20000</span>
+                                <span id="maxRange">100000</span>
+
+                            </div>
+                            <input type="range" class="range amount" name="" value="20000" min="10000" max="100000" onchange="rangeSlider1(this.value)" onmousemove="rangeSlider1(this.value)">
+                        </div>
+                        <div id="range-period">
+                            <div class="rangeValues">
+                                <span id="minRange">1 month</span>
+                                <span><span id="selectedRange2">3</span> months</span>
+                                <span id="maxRange">12 months</span>
+
+                            </div>
+                            <input type="range" class="range period" name="" value="3" min="1" max="12"onchange="rangeSlider2(this.value)" onmousemove="rangeSlider2(this.value)" >
+                        </div>
+                        <div id="result">
+                            <div class="borrow">
+                                Amount Borrowed: <span id="amt-borrow"></span>
+                            </div>
+                            <div class="pay">
+                                Amount that you will pay: <span id="amt-pay"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum deleniti debitis nulla, illum ut dolores fugit, eos quaerat hic laborum libero laudantium cum architecto voluptates quam ducimus? Illo, est itaque?</p>
+                    </div>
+                </div>
+            </section>
+            <section id="about"></section>
+        </main>
+        <!----------  MAIN END (/) ---------->
+
+        <!----------  FOOTER START ---------->
+        <footer>
+
+        </footer>
+        <!----------  HEADER END (/) ---------->
+
+    </body>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </html>

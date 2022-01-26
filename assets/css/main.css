@@ -38,11 +38,11 @@ body {
 header {
     width: 100%;
     height: 10%;
-    background-color: #3589f1;
+    background-color: #3e77bd;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 1000;
 }
 
 /*  3. 
@@ -58,10 +58,208 @@ main {}
 section {
     margin: 10px auto;
     width: 99%;
-    height: 88vh;
+    /* height: 98vh; */
+    min-height: 88vh;
     border: 1px solid black;
     /*to be removed*/
 }
+
+
+/* 4. 
+-----------------------Loans--------------------------
+*****************************************************************/
+.loans-div{
+    max-width: 1450px;
+    /* background-color: antiquewhite; */
+    margin: 0 auto;
+    text-align: center;
+    /* line-height: 30px; */
+    
+}
+.heading-loans
+{
+    padding-bottom: 45px;
+
+}
+.heading-loans h1{
+    font-size: 2rem;
+    padding:20px 0px;
+    letter-spacing: 1px;
+}
+.heading-loans p{
+    font-size: 1rem;
+    width: 80%;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    line-height: 28px;
+    text-align: center;
+}
+.heading-loans p span{
+    font-weight: bold;
+}
+
+.loans-grid{
+    display: grid;
+    grid-gap: 2rem;
+
+    grid-template-columns:repeat(auto-fit, minmax(265px,1fr));
+    justify-content: center;
+    align-items: center;
+}
+.loans-grid .loan-row{
+    position: relative;
+    padding: 20px;
+    background-color: white;
+    
+    text-align: left;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    z-index: 1;
+}
+
+.loans-grid .loan-row::after{
+    content: "";
+    position: absolute;
+    height: 2%;
+    background-color: #33639e;
+    width: 100%;
+    transition: 0.5s;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+}
+.loans-grid .loan-row .icon
+{
+    font-size: 3rem;
+    padding-bottom:10px;
+    padding-top: 10px;
+    transition: 0.5s;
+}
+
+.loans-grid .loan-row .content p,
+.loans-grid .loan-row .content h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    transition: 0.5s;
+}
+.loans-grid .loan-row .content h2{
+    position: relative;
+}
+.loans-grid .loan-row .content h2::before{
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+
+
+/* Hover */
+.loans-grid .loan-row:hover::after
+{
+    height: 100%;
+}
+.loans-grid .loan-row:hover .content h2,
+.loans-grid .loan-row:hover .content p,
+.loans-grid .loan-row:hover .icon
+{
+    color: white;
+}
+
+.loans-grid .loan-row:hover .content h2::before{
+    width: 40%;
+    /* background-color: white; */
+}
+
+
+
+
+/*  5. 
+-----   CALCULATOR    -----
+*********************************************************************/
+.calculator-div{
+    max-width: 1450px;
+    background-color: rgb(167, 98, 8);
+    margin: 0 auto;
+    text-align: center;
+    /* line-height: 30px; */
+}
+
+.calculator-div .right{
+    float: right;
+    width: 40%;
+}
+.calculator-div .left{
+    float: left;
+    width: 50%;
+    position: relative;
+    text-align: left;
+    background: #33639e;
+    padding: 50px;
+    line-height: 25px;
+}
+.calculator-div #range-amount,#range-period{
+    position: relative;
+    /* background: chartreuse; */
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.calculator-div .rangeValues{
+    /* position:absolute; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.calculator-div .left h1{
+    text-align: center;
+    font-size: 2.4rem;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+}
+#range-period span,#range-amount span{
+    font-weight: 700;
+    font-size:1.2rem;
+
+}
+
+#result{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+#result .borrow, #result .pay{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.range{
+    width: 100%;
+    height: 6px;
+    border-radius: 10px;
+    background: #ebd40d;
+    -webkit-appearance: none;
+    outline: none;
+    border: 2px;
+}
+.range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 14px;
+    height: 26px;
+    border-radius: 2px;
+    background: rgb(168, 119, 26);
+    cursor: pointer;
+}
+
+
+
+
+
+
 
 
 /*  n. 
